@@ -1,3 +1,18 @@
+=circleThing($rad, $height, $width, $bg, $color)
+	-webkit-border-radius: $rad
+	-moz-border-radius: $rad
+	-ms-border-radius: $rad
+	border-radius: $rad
+
+	height: $height
+	width: $width
+	line-height: $height
+	text-align: center
+	background: $bg
+	color: $color
+	margin: 0 auto
+
+
 body, #slider, .wrap, .slide-content
 	margin: 0
 	padding: 0
@@ -7,6 +22,7 @@ body, #slider, .wrap, .slide-content
 
 .wrap
 	position: relative
+	display: none
 
 .slide
 	background-size: cover
@@ -16,11 +32,6 @@ body, #slider, .wrap, .slide-content
 .slide1
 	background-image: url(https://picsum.photos/1200)
 
-.slide2
-	background-image: url(https://picsum.photos/1200)
-
-.slide3
-	background-image: url(https://picsum.photos/1200)
 
 .slide-content
 	display: flex
@@ -56,6 +67,17 @@ body, #slider, .wrap, .slide-content
 
 
 
+article
+	background: grey
+	width: 760px
+	margin: -40px auto 0
+	padding: 40px
+	box-sizing: border-box
+	position: relative
+	z-index: -2
+
+header
+	+circleThing(100%, 200px, 200px, blue, white)
 
 
 
